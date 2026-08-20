@@ -43,7 +43,7 @@ Expert prompts follow [`references/round-protocol.md`](../../cursor/discussion/r
 
 Use `/discussion` when two competent people could disagree and the cost of being wrong is high.
 
-Skip it for facts ([deep-analyze](deep-analyze.md)), for prompt crafting, and for writing the work log.
+Skip it for facts ([deep-analyze](deep-analyze.md)), for a wide web survey ([deep-research](deep-research.md)), for prompt crafting, and for writing the work log.
 
 This skill is **slash only**.
 
@@ -69,6 +69,7 @@ You should not get a novel-length transcript. If you do, the skill is being igno
 ## With other skills
 
 - Use [deep-analyze](deep-analyze.md) first when the fight is actually about a fact.
+- Use [deep-research](deep-research.md) when you need the outside web before you argue values.
 - Use [wiki-for-llm](wiki-for-llm.md) after, if the decision should survive this chat.
 - Use [meta-prompting](meta-prompting.md) if you want to approve the discussion brief before the panel starts.
 

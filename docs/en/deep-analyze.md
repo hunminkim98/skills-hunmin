@@ -37,7 +37,7 @@ Harmful dual-use requests (weapons, CSAM, malware, doxxing) get one short refusa
 
 Use `/deep-analyze` when you want the truth about a claim, a path, a contract, or a page, and you do not want files touched.
 
-Skip it for "please implement," for prompt rewriting, for wiki closeout, and for multi-stakeholder trade-offs ([discussion](discussion.md)).
+Skip it for "please implement," for prompt rewriting, for wiki closeout, for a wide web survey ([deep-research](deep-research.md)), and for multi-stakeholder trade-offs ([discussion](discussion.md)).
 
 This skill is **slash only**.
 
@@ -61,6 +61,7 @@ You should not see new files in `git status` after a clean run.
 ## With other skills
 
 - Facts first, then [discussion](discussion.md) if you still have a value trade-off.
+- Wide web coverage across related angles is [deep-research](deep-research.md), not this skill.
 - Do not expect [wiki-for-llm](wiki-for-llm.md) notes from this skill.
 - Do not run this instead of [meta-prompting](meta-prompting.md) when you wanted a prompt.
 

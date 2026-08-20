@@ -18,6 +18,8 @@ Full guides: [English](docs/en/README.md) and [한국어](docs/ko/README.md).
 
 `output-debt` scores leftover agent outputs from 5 to 1. Scores below 3 go to `garbage/` with a memo. Nothing is deleted.
 
+`deep-research` fans a topic into related web angles, searches them in parallel, and returns a cited brief in chat. It does not write a playbook file.
+
 ## Install
 
 Use the [skills](https://github.com/vercel-labs/skills) CLI. Run this in a real terminal (Cursor Terminal or iTerm), not inside an Agent chat. Agent shells skip the picker.
@@ -63,6 +65,7 @@ Cursor (`cursor/`):
 - [discussion](cursor/discussion/SKILL.md) · [docs](docs/en/discussion.md)
 - [humanizer](cursor/humanizer/SKILL.md) · [docs](docs/en/humanizer.md)
 - [output-debt](cursor/output-debt/SKILL.md) · [docs](docs/en/output-debt.md)
+- [deep-research](cursor/deep-research/SKILL.md) · [docs](docs/en/deep-research.md)
 
 In a new repo, install `wiki-for-llm` (project or global) and add the one-line closeout from `cursor/wiki-for-llm/references/agents-md-snippet.md` to `AGENTS.md` if the repo has no richer wiki rule.
 
@@ -85,6 +88,8 @@ In a new repo, install `wiki-for-llm` (project or global) and add the one-line c
 `humanizer`는 챗봇처럼 읽히는 글을 고칩니다. 영어 블록과 한국어 블록은 카탈로그가 달라서 규칙이 서로 싸우지 않습니다.
 
 `output-debt`는 남은 에이전트 산출물에 1부터 5까지 점수를 매깁니다. 3 미만은 메모와 함께 `garbage/`로 갑니다. 지우지는 않습니다.
+
+`deep-research`는 주제를 관련 웹 각도로 나눈 뒤 병렬로 검색하고, 채팅에 근거 있는 브리프를 남깁니다. 플레이북 파일은 쓰지 않습니다.
 
 ## 설치
 
@@ -131,5 +136,6 @@ Cursor (`cursor/`):
 - [discussion](cursor/discussion/SKILL.md) · [문서](docs/ko/discussion.md)
 - [humanizer](cursor/humanizer/SKILL.md) · [문서](docs/ko/humanizer.md)
 - [output-debt](cursor/output-debt/SKILL.md) · [문서](docs/ko/output-debt.md)
+- [deep-research](cursor/deep-research/SKILL.md) · [문서](docs/ko/deep-research.md)
 
 새 레포에서는 `wiki-for-llm`를 설치하고, 더 자세한 위키 규칙이 없을 때만 `AGENTS.md`에 `cursor/wiki-for-llm/references/agents-md-snippet.md`의 한 줄을 넣으면 됩니다.

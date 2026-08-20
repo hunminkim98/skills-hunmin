@@ -43,7 +43,7 @@
 
 유능한 두 사람이 갈릴 수 있고, 틀렸을 때 값이 클 때 `/discussion`을 씁니다.
 
-사실만 필요하면 [deep-analyze](deep-analyze.md), 프롬프트를 만들면, 작업 일지를 쓰면 이쪽이 아닙니다.
+사실만 필요하면 [deep-analyze](deep-analyze.md), 넓은 웹 조사면 [deep-research](deep-research.md), 프롬프트를 만들면, 작업 일지를 쓰면 이쪽이 아닙니다.
 
 이 스킬은 **슬래시로만** 켭니다.
 
@@ -69,6 +69,7 @@ npx skills add hunminkim98/skills-hunmin --skill discussion --agent cursor
 ## 다른 스킬과
 
 - 싸움이 사실이면 먼저 [deep-analyze](deep-analyze.md).
+- 가치 싸움 전에 바깥 웹이 필요하면 [deep-research](deep-research.md).
 - 이 채팅 밖으로 결정을 남기려면 뒤에 [wiki-for-llm](wiki-for-llm.md).
 - 패널을 열기 전에 브리프를 승인하려면 [meta-prompting](meta-prompting.md).
 

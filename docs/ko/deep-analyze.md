@@ -37,7 +37,7 @@
 
 주장, 경로, 계약, 페이지가 맞는지 알고 싶고 파일은 건드리고 싶지 않을 때 `/deep-analyze`를 씁니다.
 
-"구현해 줘", 프롬프트 다시 쓰기, 위키 closeout, 여러 이해관계자의 트레이드오프([discussion](discussion.md))에는 쓰지 마세요.
+"구현해 줘", 프롬프트 다시 쓰기, 위키 closeout, 넓은 웹 조사([deep-research](deep-research.md)), 여러 이해관계자의 트레이드오프([discussion](discussion.md))에는 쓰지 마세요.
 
 이 스킬은 **슬래시로만** 켭니다.
 
@@ -61,6 +61,7 @@ npx skills add hunminkim98/skills-hunmin --skill deep-analyze --agent cursor
 ## 다른 스킬과
 
 - 사실이 먼저고, 그다음에도 가치 선택이 남으면 [discussion](discussion.md).
+- 관련 각도를 넓게 웹에서 보는 일은 [deep-research](deep-research.md)이지 이쪽이 아니다.
 - 이 스킬에서 [wiki-for-llm](wiki-for-llm.md) 노트를 기대하지 마세요.
 - 프롬프트가 목표면 [meta-prompting](meta-prompting.md)을 쓰세요.
 
