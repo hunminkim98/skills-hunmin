@@ -10,6 +10,8 @@ Personal agent skills, grouped by host. Cursor-specific skills live under `curso
 
 `deep-analyze` is a read-only investigation of a user-specified question. It stays in scope, cites evidence, and does not change files.
 
+`discussion` runs a real parallel expert debate on a complex problem, asks the user when a constraint would change the ranking, and returns one recommended path.
+
 ## Install
 
 Use the [skills](https://github.com/vercel-labs/skills) CLI. Run this in a real terminal (Cursor Terminal or iTerm), not inside an Agent chat. Agent shells skip the picker.
@@ -52,6 +54,7 @@ Cursor (`cursor/`):
 - [prompt-optimizer](cursor/prompt-optimizer/SKILL.md)
 - [wiki-for-llm](cursor/wiki-for-llm/SKILL.md)
 - [deep-analyze](cursor/deep-analyze/SKILL.md)
+- [discussion](cursor/discussion/SKILL.md)
 
 In a new repo, install `wiki-for-llm` (project or global) and add the one-line closeout from `cursor/wiki-for-llm/references/agents-md-snippet.md` to `AGENTS.md` if the repo has no richer wiki rule.
 
@@ -66,6 +69,8 @@ In a new repo, install `wiki-for-llm` (project or global) and add the one-line c
 `wiki-for-llm`는 작업·결정·정리·개선 노트를 남겨, 다음 에이전트가 사용자에게 맥락을 다시 묻지 않게 합니다. 바깥 자료를 raw에 넣는 Karpathy 위키가 아닙니다.
 
 `deep-analyze`는 사용자가 지정한 질문만 읽기 전용으로 조사합니다. 범위를 넓히지 않고, 근거를 붙이며, 파일은 바꾸지 않습니다.
+
+`discussion`은 복잡한 문제를 실제 병렬 전문가 에이전트와 토론하고, 순위가 갈리는 지점에서 사용자에게 물은 뒤 하나의 권고안을 냅니다.
 
 ## 설치
 
@@ -109,5 +114,6 @@ Cursor (`cursor/`):
 - [prompt-optimizer](cursor/prompt-optimizer/SKILL.md)
 - [wiki-for-llm](cursor/wiki-for-llm/SKILL.md)
 - [deep-analyze](cursor/deep-analyze/SKILL.md)
+- [discussion](cursor/discussion/SKILL.md)
 
 새 레포에서는 `wiki-for-llm`를 설치하고, 더 자세한 위키 규칙이 없을 때만 `AGENTS.md`에 `cursor/wiki-for-llm/references/agents-md-snippet.md`의 한 줄을 넣으면 됩니다.
