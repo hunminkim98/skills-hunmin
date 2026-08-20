@@ -16,6 +16,8 @@ Full guides: [English](docs/en/README.md) and [한국어](docs/ko/README.md).
 
 `humanizer` rewrites chatbot prose. English blocks and Korean blocks use different catalogs so the rules do not fight.
 
+`output-debt` scores leftover agent outputs from 5 to 1. Scores below 3 go to `garbage/` with a memo. Nothing is deleted.
+
 ## Install
 
 Use the [skills](https://github.com/vercel-labs/skills) CLI. Run this in a real terminal (Cursor Terminal or iTerm), not inside an Agent chat. Agent shells skip the picker.
@@ -60,6 +62,7 @@ Cursor (`cursor/`):
 - [deep-analyze](cursor/deep-analyze/SKILL.md) · [docs](docs/en/deep-analyze.md)
 - [discussion](cursor/discussion/SKILL.md) · [docs](docs/en/discussion.md)
 - [humanizer](cursor/humanizer/SKILL.md) · [docs](docs/en/humanizer.md)
+- [output-debt](cursor/output-debt/SKILL.md) · [docs](docs/en/output-debt.md)
 
 In a new repo, install `wiki-for-llm` (project or global) and add the one-line closeout from `cursor/wiki-for-llm/references/agents-md-snippet.md` to `AGENTS.md` if the repo has no richer wiki rule.
 
@@ -80,6 +83,8 @@ In a new repo, install `wiki-for-llm` (project or global) and add the one-line c
 `discussion`은 복잡한 문제를 실제 병렬 전문가 에이전트와 토론하고, 순위가 갈리는 지점에서 사용자에게 물은 뒤 하나의 권고안을 냅니다.
 
 `humanizer`는 챗봇처럼 읽히는 글을 고칩니다. 영어 블록과 한국어 블록은 카탈로그가 달라서 규칙이 서로 싸우지 않습니다.
+
+`output-debt`는 남은 에이전트 산출물에 1부터 5까지 점수를 매깁니다. 3 미만은 메모와 함께 `garbage/`로 갑니다. 지우지는 않습니다.
 
 ## 설치
 
@@ -125,5 +130,6 @@ Cursor (`cursor/`):
 - [deep-analyze](cursor/deep-analyze/SKILL.md) · [문서](docs/ko/deep-analyze.md)
 - [discussion](cursor/discussion/SKILL.md) · [문서](docs/ko/discussion.md)
 - [humanizer](cursor/humanizer/SKILL.md) · [문서](docs/ko/humanizer.md)
+- [output-debt](cursor/output-debt/SKILL.md) · [문서](docs/ko/output-debt.md)
 
 새 레포에서는 `wiki-for-llm`를 설치하고, 더 자세한 위키 규칙이 없을 때만 `AGENTS.md`에 `cursor/wiki-for-llm/references/agents-md-snippet.md`의 한 줄을 넣으면 됩니다.

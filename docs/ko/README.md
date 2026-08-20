@@ -16,8 +16,9 @@ Cursor용 스킬은 [`cursor/`](../../cursor/)에 있습니다. 원하는 것만
 | 파일은 건드리지 않고 질문 하나만 엄격히 조사하기 | [deep-analyze](deep-analyze.md) |
 | 어려운 트레이드오프를 전문가 하위 에이전트와 토론하고, 나도 끼어들기 | [discussion](discussion.md) |
 | 영어나 한국어 글이 챗봇처럼 들릴 때 문체만 고치기 | [humanizer](humanizer.md) |
+| 남은 에이전트 산출물을 남길지 격리할지 나누기 | [output-debt](output-debt.md) |
 
-이 일들을 서로 바꿔 쓰지 마세요. 사실 조사와 설계 선택은 다릅니다. 토론은 작업 일지가 아닙니다. 이 저장소에는 논문·아티클을 `raw/`에 쌓는 Karpathy식 위키가 없습니다. 챗봇 문체를 지우는 일은 따로 합니다.
+이 일들을 서로 바꿔 쓰지 마세요. 사실 조사와 설계 선택은 다릅니다. 토론은 작업 일지가 아닙니다. 이 저장소에는 논문·아티클을 `raw/`에 쌓는 Karpathy식 위키가 없습니다. 챗봇 문체를 지우는 일은 따로 합니다. 옛 렌더를 격리하는 일은 죽은 코드를 지우는 일이 아닙니다.
 
 ## 설치
 
@@ -56,6 +57,7 @@ cursor/
   deep-analyze/
   discussion/
   humanizer/
+  output-debt/
 ```
 
 `meta-prompting`은 형제 `prompt-optimizer`를 읽습니다. Y/N 흐름을 쓰려면 둘 다 설치하세요. 나머지는 혼자 동작합니다.
@@ -68,3 +70,4 @@ cursor/
 - [deep-analyze](deep-analyze.md)
 - [discussion](discussion.md)
 - [humanizer](humanizer.md)
+- [output-debt](output-debt.md)

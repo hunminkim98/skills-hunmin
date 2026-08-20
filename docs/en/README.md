@@ -16,8 +16,9 @@ Cursor skills live under [`cursor/`](../../cursor/). Pick the ones you want. Not
 | Investigate one question strictly, without changing files | [deep-analyze](deep-analyze.md) |
 | Debate a hard trade-off with expert sub-agents, and stay in the loop | [discussion](discussion.md) |
 | Make English or Korean prose sound less like a chatbot | [humanizer](humanizer.md) |
+| Sort leftover agent outputs: keep in place or quarantine | [output-debt](output-debt.md) |
 
-Do not swap these jobs. A fact hunt is not a design choice. A debate is not a work log. This repo does not ship a Karpathy-style `raw/` wiki. Cleaning chatbot phrasing is a separate pass.
+Do not swap these jobs. A fact hunt is not a design choice. A debate is not a work log. This repo does not ship a Karpathy-style `raw/` wiki. Cleaning chatbot phrasing is a separate pass. Quarantining old renders is not deleting dead code.
 
 ## How installation works
 
@@ -56,6 +57,7 @@ cursor/
   deep-analyze/
   discussion/
   humanizer/
+  output-debt/
 ```
 
 `meta-prompting` reads its sibling `prompt-optimizer`. Install both if you want the Y/N flow. The other skills stand alone.
@@ -68,3 +70,4 @@ cursor/
 - [deep-analyze](deep-analyze.md)
 - [discussion](discussion.md)
 - [humanizer](humanizer.md)
+- [output-debt](output-debt.md)
