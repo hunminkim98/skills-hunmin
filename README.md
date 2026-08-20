@@ -2,7 +2,7 @@
 
 [한국어](#한국어)
 
-Personal Cursor agent skills. Add more skill folders over time; installers pick only the ones they want.
+Personal agent skills, grouped by host. Cursor-specific skills live under `cursor/`. Add more folders over time; installers pick only the ones they want.
 
 `meta-prompting` uses sibling `prompt-optimizer` to rewrite a draft, then asks Y or N before using it. If you want that flow, select both.
 
@@ -42,14 +42,16 @@ Start a new Agent chat afterwards and type `/` plus the skill name.
 
 ## Skills
 
-- [meta-prompting](meta-prompting/SKILL.md)
-- [prompt-optimizer](prompt-optimizer/SKILL.md)
+Cursor (`cursor/`):
+
+- [meta-prompting](cursor/meta-prompting/SKILL.md)
+- [prompt-optimizer](cursor/prompt-optimizer/SKILL.md)
 
 ---
 
 # 한국어
 
-개인용 Cursor 에이전트 스킬 모음입니다. 스킬 폴더를 계속 추가할 수 있고, 설치하는 사람은 원하는 것만 고릅니다.
+에이전트별로 나눠 둔 개인 스킬 모음입니다. Cursor 전용 스킬은 `cursor/`에 있습니다. 폴더를 계속 추가할 수 있고, 설치하는 사람은 원하는 것만 고릅니다.
 
 `meta-prompting`은 옆에 있는 `prompt-optimizer`로 초안을 고친 뒤, 쓰기 전에 Y 또는 N을 묻습니다. 이 흐름을 쓰려면 둘 다 선택하세요.
 
@@ -89,5 +91,7 @@ npx skills add hunminkim98/skills-hunmin --agent cursor --global
 
 ## 스킬
 
-- [meta-prompting](meta-prompting/SKILL.md)
-- [prompt-optimizer](prompt-optimizer/SKILL.md)
+Cursor (`cursor/`):
+
+- [meta-prompting](cursor/meta-prompting/SKILL.md)
+- [prompt-optimizer](cursor/prompt-optimizer/SKILL.md)

@@ -10,7 +10,7 @@ The user's draft is not the final prompt. Run it through prompt-optimizer, then 
 
 ## Optimizer pass
 
-Before writing anything, read and follow the sibling skill `../prompt-optimizer/SKILL.md` (repository path: `prompt-optimizer/SKILL.md`).
+Before writing anything, read and follow the sibling skill `../prompt-optimizer/SKILL.md` (repository path: `cursor/prompt-optimizer/SKILL.md`).
 
 If that file is missing, still produce a finished chat prompt with:
 
