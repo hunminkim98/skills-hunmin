@@ -15,8 +15,9 @@ Cursor용 스킬은 [`cursor/`](../../cursor/)에 있습니다. 원하는 것만
 | 작업 노트를 남겨 다음 에이전트가 맥락을 다시 묻지 않게 하기 | [wiki-for-llm](wiki-for-llm.md) |
 | 파일은 건드리지 않고 질문 하나만 엄격히 조사하기 | [deep-analyze](deep-analyze.md) |
 | 어려운 트레이드오프를 전문가 하위 에이전트와 토론하고, 나도 끼어들기 | [discussion](discussion.md) |
+| 영어나 한국어 글이 챗봇처럼 들릴 때 문체만 고치기 | [humanizer](humanizer.md) |
 
-이 일들은 서로를 대체하지 않습니다. 사실 조사는 토론이 아닙니다. 토론은 작업 일지가 아닙니다. 작업 일지는 논문·아티클을 `raw/`에 쌓는 Karpathy식 위키도 아닙니다. 그 워크플로는 이 저장소에 없습니다.
+이 일들은 서로를 대체하지 않습니다. 사실 조사는 토론이 아닙니다. 토론은 작업 일지가 아닙니다. 작업 일지는 논문·아티클을 `raw/`에 쌓는 Karpathy식 위키도 아닙니다. 그 워크플로는 이 저장소에 없습니다. 챗봇 문체를 지우는 일도 위와는 별개입니다.
 
 ## 설치가 돌아가는 방식
 
@@ -54,9 +55,10 @@ cursor/
   wiki-for-llm/
   deep-analyze/
   discussion/
+  humanizer/
 ```
 
-`meta-prompting`은 형제 `prompt-optimizer`를 읽습니다. Y/N 흐름을 쓰려면 둘 다 설치하세요. 나머지 셋은 혼자 동작합니다.
+`meta-prompting`은 형제 `prompt-optimizer`를 읽습니다. Y/N 흐름을 쓰려면 둘 다 설치하세요. 나머지는 혼자 동작합니다.
 
 ## 스킬 페이지
 
@@ -65,3 +67,4 @@ cursor/
 - [wiki-for-llm](wiki-for-llm.md)
 - [deep-analyze](deep-analyze.md)
 - [discussion](discussion.md)
+- [humanizer](humanizer.md)

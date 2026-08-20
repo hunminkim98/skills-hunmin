@@ -15,8 +15,9 @@ Cursor-specific skills live under [`cursor/`](../../cursor/). You pick the ones 
 | Keep work notes so the next agent does not ask you to recap | [wiki-for-llm](wiki-for-llm.md) |
 | Investigate one question strictly, without changing files | [deep-analyze](deep-analyze.md) |
 | Debate a hard trade-off with expert sub-agents, and stay in the loop | [discussion](discussion.md) |
+| Make English or Korean prose sound less like a chatbot | [humanizer](humanizer.md) |
 
-These jobs do not replace each other. A fact hunt is not a debate. A debate is not a work log. A work log is not an article library (that would be a Karpathy-style `raw/` wiki, which this repo does not ship).
+These jobs do not replace each other. A fact hunt is not a debate. A debate is not a work log. A work log is not an article library (that would be a Karpathy-style `raw/` wiki, which this repo does not ship). Cleaning chatbot phrasing is not any of those.
 
 ## How installation works
 
@@ -54,9 +55,10 @@ cursor/
   wiki-for-llm/
   deep-analyze/
   discussion/
+  humanizer/
 ```
 
-`meta-prompting` reads its sibling `prompt-optimizer`. Install both if you want the Y/N flow. The other three skills stand alone.
+`meta-prompting` reads its sibling `prompt-optimizer`. Install both if you want the Y/N flow. The other skills stand alone.
 
 ## Skill pages
 
@@ -65,3 +67,4 @@ cursor/
 - [wiki-for-llm](wiki-for-llm.md)
 - [deep-analyze](deep-analyze.md)
 - [discussion](discussion.md)
+- [humanizer](humanizer.md)
