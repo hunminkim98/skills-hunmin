@@ -1,34 +1,42 @@
 # skills-hunmin
 
-Personal Cursor agent skills.
+Personal Cursor agent skills. Add more skill folders over time; installers pick only the ones they want.
 
-`meta-prompting` uses sibling `prompt-optimizer` to rewrite a draft, then asks Y or N before using it. Install both skills together.
+`meta-prompting` uses sibling `prompt-optimizer` to rewrite a draft, then asks Y or N before using it. If you want that flow, select both.
 
 ## Install
 
-Use the [skills](https://github.com/vercel-labs/skills) CLI. It is the `pip install` equivalent for agent skills.
-
-If you omit the flags, the CLI asks whether to install into the current project or globally, and which skills to take.
-
-**This project only** (default). Cursor reads them from `.agents/skills/`.
-
-```bash
-npx skills add hunminkim98/skills-hunmin --agent cursor --skill '*'
-```
-
-**All Cursor projects** on this machine.
-
-```bash
-npx skills add hunminkim98/skills-hunmin --agent cursor --skill '*' --global
-```
-
-**Ask each time**
+Use the [skills](https://github.com/vercel-labs/skills) CLI. Run this in a real terminal (Cursor Terminal or iTerm), not inside an Agent chat. Agent shells skip the picker.
 
 ```bash
 npx skills add hunminkim98/skills-hunmin
 ```
 
-Start a new Agent chat afterwards and type `/meta-prompting` or `/prompt-optimizer`.
+That opens a terminal UI:
+
+1. Search and checkbox-select skills (type to filter, space to toggle, enter to confirm)
+2. Choose this project or global
+3. Choose Cursor (and any other agents)
+
+**One skill, no UI**
+
+```bash
+npx skills add hunminkim98/skills-hunmin --skill meta-prompting --agent cursor
+```
+
+**This project only, skip the scope prompt**
+
+```bash
+npx skills add hunminkim98/skills-hunmin --agent cursor
+```
+
+**All Cursor projects**
+
+```bash
+npx skills add hunminkim98/skills-hunmin --agent cursor --global
+```
+
+Start a new Agent chat afterwards and type `/` plus the skill name.
 
 ## Skills
 
