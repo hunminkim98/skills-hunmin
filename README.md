@@ -6,7 +6,7 @@ Personal agent skills, grouped by host. Cursor-specific skills live under `curso
 
 `meta-prompting` uses sibling `prompt-optimizer` to rewrite a draft, then asks Y or N before using it. If you want that flow, select both.
 
-`work-record` writes task, decision, cleanup, and improvement notes so the next agent can continue without asking the user to recap. It is not Karpathy-style source ingest.
+`wiki-for-llm` writes task, decision, cleanup, and improvement notes so the next agent can continue without asking the user to recap. It is not Karpathy-style source ingest.
 
 ## Install
 
@@ -48,9 +48,9 @@ Cursor (`cursor/`):
 
 - [meta-prompting](cursor/meta-prompting/SKILL.md)
 - [prompt-optimizer](cursor/prompt-optimizer/SKILL.md)
-- [work-record](cursor/work-record/SKILL.md)
+- [wiki-for-llm](cursor/wiki-for-llm/SKILL.md)
 
-In a new repo, install `work-record` (project or global) and add the one-line closeout from `cursor/work-record/references/agents-md-snippet.md` to `AGENTS.md` if the repo has no richer wiki rule.
+In a new repo, install `wiki-for-llm` (project or global) and add the one-line closeout from `cursor/wiki-for-llm/references/agents-md-snippet.md` to `AGENTS.md` if the repo has no richer wiki rule.
 
 ---
 
@@ -60,7 +60,7 @@ In a new repo, install `work-record` (project or global) and add the one-line cl
 
 `meta-prompting`은 옆에 있는 `prompt-optimizer`로 초안을 고친 뒤, 쓰기 전에 Y 또는 N을 묻습니다. 이 흐름을 쓰려면 둘 다 선택하세요.
 
-`work-record`는 작업·결정·정리·개선 노트를 남겨, 다음 에이전트가 사용자에게 맥락을 다시 묻지 않게 합니다. 바깥 자료를 raw에 넣는 Karpathy 위키가 아닙니다.
+`wiki-for-llm`는 작업·결정·정리·개선 노트를 남겨, 다음 에이전트가 사용자에게 맥락을 다시 묻지 않게 합니다. 바깥 자료를 raw에 넣는 Karpathy 위키가 아닙니다.
 
 ## 설치
 
@@ -102,6 +102,6 @@ Cursor (`cursor/`):
 
 - [meta-prompting](cursor/meta-prompting/SKILL.md)
 - [prompt-optimizer](cursor/prompt-optimizer/SKILL.md)
-- [work-record](cursor/work-record/SKILL.md)
+- [wiki-for-llm](cursor/wiki-for-llm/SKILL.md)
 
-새 레포에서는 `work-record`를 설치하고, 더 자세한 위키 규칙이 없을 때만 `AGENTS.md`에 `cursor/work-record/references/agents-md-snippet.md`의 한 줄을 넣으면 됩니다.
+새 레포에서는 `wiki-for-llm`를 설치하고, 더 자세한 위키 규칙이 없을 때만 `AGENTS.md`에 `cursor/wiki-for-llm/references/agents-md-snippet.md`의 한 줄을 넣으면 됩니다.

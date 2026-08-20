@@ -1,9 +1,9 @@
 ---
-name: work-record
-description: Records agent work into a project wiki so the user does not have to re-explain context later. Use when a session changes code, docs, architecture, workflow, Git state, or makes a decision the next agent must know. Write task, decision, cleanup, and improvement notes before the final reply. Do not use for read-only questions, typos, or exploration that leaves no durable state. This is not Karpathy LLM wiki and does not ingest external articles into raw/.
+name: wiki-for-llm
+description: Records agent work into a project wiki so the user does not have to re-explain context later. Use when the user invokes /wiki-for-llm, or when a session changes code, docs, architecture, workflow, Git state, or makes a decision the next agent must know. Write task, decision, cleanup, and improvement notes before the final reply. Do not use for read-only questions, typos, or exploration that leaves no durable state. This is not Karpathy LLM wiki and does not ingest external articles into raw/.
 ---
 
-# Work Record
+# Wiki for LLM
 
 The user should not carry the session in their head. If this turn produced durable work, write it down before you answer. The chat stays short. The wiki holds the detail the next agent will need.
 
