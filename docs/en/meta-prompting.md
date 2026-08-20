@@ -6,9 +6,9 @@ Improve your draft with [prompt-optimizer](prompt-optimizer.md), show the result
 
 ## Why it exists
 
-An optimizer that immediately starts the real task is dangerous. You asked to *see* the prompt. The agent “helpfully” begins coding, or investigating, or rewriting the repo.
+An optimizer that immediately starts the real task is dangerous. You asked to *see* the prompt. The agent "helpfully" begins coding, or investigating, or rewriting the repo.
 
-Meta-prompting splits those jobs. First the draft becomes a finished prompt. Then you get a button, not a paragraph that says “reply Y or N.” Until you press **Y**, the real work does not start. Until you press **N**, the agent does not invent a new direction.
+Meta-prompting splits those jobs. First the draft becomes a finished prompt. Then you get a button, not a paragraph that says "reply Y or N." Until you press **Y**, the real work does not start. Until you press **N**, the agent does not invent a new direction.
 
 The approval UI is Korean on purpose (`이 프롬프트를 이대로 쓸까요?`). The optimized prompt stays in the language of your draft.
 
@@ -16,10 +16,10 @@ The approval UI is Korean on purpose (`이 프롬프트를 이대로 쓸까요?`
 
 1. If you typed `/meta-prompting` with no draft, the agent asks you to paste one and stops.
 2. It reads the sibling skill `cursor/prompt-optimizer/SKILL.md` and runs that optimizer. If that file is missing, it still writes a finished prompt: no placeholders, Case A or Case B, plus a closing reasoning line.
-3. **Override:** prompt-optimizer wants “only a code block.” Meta-prompting still shows that block, then asks Y/N. It does not explain what changed.
+3. **Override:** prompt-optimizer wants "only a code block." Meta-prompting still shows that block, then asks Y/N. It does not explain what changed.
 4. `AskQuestion` appears with exactly two options: **Y** (use as-is) and **N** (refine). Those labels stay `Y` and `N`.
 5. On **Y**, the approved prompt is frozen. If you wanted a prompt to copy, the agent returns only that block. If you wanted this chat to do the work, it executes the approved prompt as your request. It does not rewrite again.
-6. On **N**, you get five *concrete* edits drawn from *this* draft and *this* optimized prompt, plus a sixth option `자유 의견` (write your own note). Generic labels like “make it shorter” are not allowed as the five directions. After you pick, the optimizer runs again under that constraint, and you see Y/N again. That loop continues until **Y**.
+6. On **N**, you get five *concrete* edits drawn from *this* draft and *this* optimized prompt, plus a sixth option `자유 의견` (write your own note). Generic labels like "make it shorter" are not allowed as the five directions. After you pick, the optimizer runs again under that constraint, and you see Y/N again. That loop continues until **Y**.
 
 The sixth choice is only free comment. There is no sixth refinement strategy.
 
@@ -27,9 +27,9 @@ The sixth choice is only free comment. There is no sixth refinement strategy.
 
 Use `/meta-prompting` when the draft is not the prompt you want executed yet: a messy task, a dangerous repo change, or anything you want to read once before the agent spends a lot of time.
 
-Skip it when you already want the optimizer’s code block and nothing else (`/prompt-optimizer`). Skip it when the work is already specified and you just want it done.
+Skip it when you already want the optimizer's code block and nothing else (`/prompt-optimizer`). Skip it when the work is already specified and you just want it done.
 
-This skill is **slash only** (`disable-model-invocation: true`). It will not start because you said the word “prompt” in passing.
+This skill is **slash only** (`disable-model-invocation: true`). It will not start because you said the word "prompt" in passing.
 
 ## Install
 

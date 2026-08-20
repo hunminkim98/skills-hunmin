@@ -8,7 +8,7 @@ Record the work of this conversation so you do not have to recap it later. The c
 
 Long agent sessions create **cognitive debt**. You remember the constraints, the thing you told it not to touch, the test that was skipped. The next chat starts cold and asks you again.
 
-This skill moves that debt onto disk. The user should be able to ignore the wiki and still stay unblocked. The next agent should open the note instead of interviewing you.
+This skill moves that debt onto disk. You can ignore the wiki and still stay unblocked. The next agent should open the note instead of interviewing you.
 
 It is **not** a Karpathy LLM wiki. It does not fetch papers into `raw/` and compile concept pages. The material is **this chat and this change set**.
 
@@ -16,7 +16,7 @@ It is also not UmFit-specific. Default folders are portable. If a repo already h
 
 ## How it works
 
-The agent writes **without being asked** when the turn changed code, docs, architecture, workflow, Git state, or a decision the next agent must follow — or when something was removed and must stay gone, or a durable improvement should be reused.
+The agent writes **without being asked** when the turn changed code, docs, architecture, workflow, Git state, or a decision the next agent must follow. Same if something was removed and must stay gone, or a durable improvement should be reused.
 
 It skips read-only questions, typos, and exploration that left no durable state, unless that exploration produced an important decision.
 
@@ -34,14 +34,14 @@ llm-wiki/
   index.md
 ```
 
-Templates are copied from the skill’s `references/`. New notes use `YYYY-MM-DD-descriptive-slug.md` unless the repo already numbers ADRs.
+Templates are copied from the skill's `references/`. New notes use `YYYY-MM-DD-descriptive-slug.md` unless the repo already numbers ADRs.
 
-Every note, in the repo’s shape or the portable templates, includes: the user request, decisions locked in chat, affected paths, what changed, what was intentionally not changed, verification commands and results (or `needs-verification`), and follow-ups. Secrets and machine-local absolute paths stay out.
+Every note, in the repo's shape or the portable templates, includes: the user request, decisions locked in chat, affected paths, what changed, what was intentionally not changed, verification commands and results (or `needs-verification`), and follow-ups. Secrets and machine-local absolute paths stay out.
 
 Chat vs wiki:
 
 - Wiki: enough for a cold agent to continue
-- Chat: what changed, how to verify, and the note path — not the wiki body pasted back
+- Chat: what changed, how to verify, and the note path. Do not paste the wiki body back.
 
 Prefer updating the open note for the same task over starting a duplicate. Link related notes. Do not invent command output.
 
@@ -49,13 +49,13 @@ Prefer updating the open note for the same task over starting a duplicate. Link 
 
 `npx skills add` does **not** edit `AGENTS.md`.
 
-The first time this skill actually **runs** in a repo that has no richer wiki closeout, it may add a one-line pointer from `references/agents-md-snippet.md` — if `AGENTS.md` already exists, or you asked to set the repo up. It will not replace a richer rule. It will not rewrite a project’s existing closeout unless that project already points at this skill.
+The first time this skill actually **runs** in a repo that has no richer wiki closeout, it may add a one-line pointer from `references/agents-md-snippet.md` if `AGENTS.md` already exists, or you asked to set the repo up. It will not replace a richer rule. It will not rewrite a project's existing closeout unless that project already points at this skill.
 
 ## When to use it
 
 Let it run after real work. You can also type `/wiki-for-llm` if you want a note written now.
 
-Skip it for “what does this function do?” unless you made a lasting decision. Skip Karpathy-style “ingest this URL into raw/.”
+Skip it for "what does this function do?" unless you made a lasting decision. Skip Karpathy-style "ingest this URL into raw/."
 
 Unlike the slash-only skills, this one **may start itself** when the description matches. A short `AGENTS.md` pointer makes that reliable in a new repo.
 

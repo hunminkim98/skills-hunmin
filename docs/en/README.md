@@ -2,9 +2,9 @@
 
 [한국어](../ko/README.md)
 
-These pages explain the Cursor skills in this repository. They are written for a person who will install a skill and then use it in chat. The `SKILL.md` files remain the instructions the agent follows. If a page and a `SKILL.md` ever disagree, trust the skill file.
+These pages are for someone who will install a skill and then use it in chat. The agent still follows each `SKILL.md`. If a page and a skill file disagree, trust the skill file.
 
-Cursor-specific skills live under [`cursor/`](../../cursor/). You pick the ones you want. Nothing here installs every skill by force.
+Cursor skills live under [`cursor/`](../../cursor/). Pick the ones you want. Nothing here force-installs the whole set.
 
 ## Which skill do I use?
 
@@ -17,7 +17,7 @@ Cursor-specific skills live under [`cursor/`](../../cursor/). You pick the ones 
 | Debate a hard trade-off with expert sub-agents, and stay in the loop | [discussion](discussion.md) |
 | Make English or Korean prose sound less like a chatbot | [humanizer](humanizer.md) |
 
-These jobs do not replace each other. A fact hunt is not a debate. A debate is not a work log. A work log is not an article library (that would be a Karpathy-style `raw/` wiki, which this repo does not ship). Cleaning chatbot phrasing is not any of those.
+Do not swap these jobs. A fact hunt is not a design choice. A debate is not a work log. This repo does not ship a Karpathy-style `raw/` wiki. Cleaning chatbot phrasing is a separate pass.
 
 ## How installation works
 
@@ -27,7 +27,7 @@ Run this in a **real terminal** (Cursor Terminal or iTerm). Agent chat skips the
 npx skills add hunminkim98/skills-hunmin
 ```
 
-The CLI lists every skill it finds, including ones nested under `cursor/`. You search, toggle with space, and confirm with enter. Then you choose this project or every Cursor project on the machine, and which agents should receive the files.
+The CLI lists every skill it finds, including ones nested under `cursor/`. Search, toggle with space, confirm with enter. Then choose this project or every Cursor project on the machine, and which agents should receive the files.
 
 Useful variants:
 
@@ -42,7 +42,7 @@ npx skills add hunminkim98/skills-hunmin --agent cursor
 npx skills add hunminkim98/skills-hunmin --agent cursor --global
 ```
 
-After install, open a **new** Agent chat and type `/` plus the skill name. Skills marked “slash only” in the pages below will not start themselves.
+After install, open a **new** Agent chat and type `/` plus the skill name. Skills marked "slash only" in the pages below will not start themselves.
 
 `npx skills add` copies skill folders. It does not edit `AGENTS.md` by itself. [wiki-for-llm](wiki-for-llm.md) may add a one-line pointer the first time it runs in a repo that has no richer closeout.
 
