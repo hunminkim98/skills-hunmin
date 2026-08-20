@@ -58,6 +58,7 @@ You should not see a new markdown file in the repo. If you do, the skill was ign
 
 - A fact about *this* codebase is [deep-analyze](deep-analyze.md), then come here only if you still need the outside world.
 - A values fight after the brief is [discussion](discussion.md).
+- Let the chair pick among this skill, the repo audit, and the panel: [ultra-research](ultra-research.md).
 - Keep the brief with [wiki-for-llm](wiki-for-llm.md) if the next agent will need it.
 - Do not run this instead of [output-debt](output-debt.md) when the mess is leftover renders.
 

@@ -70,6 +70,7 @@ You should not get a novel-length transcript. If you do, the skill is being igno
 
 - Use [deep-analyze](deep-analyze.md) first when the fight is actually about a fact.
 - Use [deep-research](deep-research.md) when you need the outside web before you argue values.
+- Use [ultra-research](ultra-research.md) when you want the chair to fetch those briefs and then open this panel only if a trade-off remains.
 - Use [wiki-for-llm](wiki-for-llm.md) after, if the decision should survive this chat.
 - Use [meta-prompting](meta-prompting.md) if you want to approve the discussion brief before the panel starts.
 

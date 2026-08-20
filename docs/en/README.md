@@ -18,8 +18,9 @@ Cursor skills live under [`cursor/`](../../cursor/). Pick the ones you want. Not
 | Make English or Korean prose sound less like a chatbot | [humanizer](humanizer.md) |
 | Sort leftover agent outputs: keep in place or quarantine | [output-debt](output-debt.md) |
 | Search related web angles in parallel and get a cited brief | [deep-research](deep-research.md) |
+| Let the chair pick web / repo / decision and the order | [ultra-research](ultra-research.md) |
 
-Do not swap these jobs. A fact hunt in this repo is not a wide web survey. A debate is not a work log. This repo does not ship a Karpathy-style `raw/` wiki. Cleaning chatbot phrasing is a separate pass. Quarantining old renders is not deleting dead code.
+Do not swap these jobs. A fact hunt in this repo is not a wide web survey. A debate is not a work log. `ultra-research` is the chair when you do not want to pick among those three. This repo does not ship a Karpathy-style `raw/` wiki. Cleaning chatbot phrasing is a separate pass. Quarantining old renders is not deleting dead code.
 
 ## How installation works
 
@@ -60,9 +61,10 @@ cursor/
   humanizer/
   output-debt/
   deep-research/
+  ultra-research/     # needs deep-research, deep-analyze, discussion next to it
 ```
 
-`meta-prompting` reads its sibling `prompt-optimizer`. Install both if you want the Y/N flow. The other skills stand alone.
+`meta-prompting` reads its sibling `prompt-optimizer`. `ultra-research` reads the three research/decision siblings. Install those groups together. The other skills stand alone.
 
 ## Skill pages
 
@@ -74,3 +76,4 @@ cursor/
 - [humanizer](humanizer.md)
 - [output-debt](output-debt.md)
 - [deep-research](deep-research.md)
+- [ultra-research](ultra-research.md)

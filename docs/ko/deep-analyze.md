@@ -62,6 +62,7 @@ npx skills add hunminkim98/skills-hunmin --skill deep-analyze --agent cursor
 
 - 사실이 먼저고, 그다음에도 가치 선택이 남으면 [discussion](discussion.md).
 - 관련 각도를 넓게 웹에서 보는 일은 [deep-research](deep-research.md)이지 이쪽이 아니다.
+- 웹 / 레포 / 결정을 의장이 고르게 하려면 [ultra-research](ultra-research.md).
 - 이 스킬에서 [wiki-for-llm](wiki-for-llm.md) 노트를 기대하지 마세요.
 - 프롬프트가 목표면 [meta-prompting](meta-prompting.md)을 쓰세요.
 

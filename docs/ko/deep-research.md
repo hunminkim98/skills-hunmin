@@ -58,6 +58,7 @@ npx skills add hunminkim98/skills-hunmin --skill deep-research --agent cursor
 
 - **이** 코드베이스의 사실은 [deep-analyze](deep-analyze.md). 바깥세상이 남으면 그때 여기로.
 - 브리프 다음의 가치 싸움은 [discussion](discussion.md).
+- 이 스킬과 레포 감사와 패널을 의장이 고르게 하려면 [ultra-research](ultra-research.md).
 - 다음 에이전트가 써야 하면 [wiki-for-llm](wiki-for-llm.md).
 - 남은 렌더를 치울 때는 [output-debt](output-debt.md)이지 이쪽이 아니다.
 

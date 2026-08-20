@@ -62,6 +62,7 @@ You should not see new files in `git status` after a clean run.
 
 - Facts first, then [discussion](discussion.md) if you still have a value trade-off.
 - Wide web coverage across related angles is [deep-research](deep-research.md), not this skill.
+- Let the chair pick web / repo / decision: [ultra-research](ultra-research.md).
 - Do not expect [wiki-for-llm](wiki-for-llm.md) notes from this skill.
 - Do not run this instead of [meta-prompting](meta-prompting.md) when you wanted a prompt.
 
